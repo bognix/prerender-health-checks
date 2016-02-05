@@ -32,3 +32,10 @@ def test_UA():
     r = requests.get('http://sandbox-dedicated.gundam.wikia.com/wiki/SVMS-01AP_Union_Flag_Orbit_Package_Colony_Guard_Type', headers=headers)
 
     assert 'ember-view' not in r.content
+
+
+if __name__ == '__main__':
+    test_rogerbot_UA()
+    test_googlebot_UA_no_escaped_fragment()
+    test_googlebot_UA_escaped_fragment()
+    test_UA()
