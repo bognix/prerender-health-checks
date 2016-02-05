@@ -1,5 +1,5 @@
-import pytest
+import nose
 
 if __name__ == '__main__':
 
-    result = pytest.main()
+    result = nose.run()
