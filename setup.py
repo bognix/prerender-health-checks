@@ -10,6 +10,8 @@ setup(
     author='Bogna "bognix" Knychala',
     install_requires=['pytest==2.8.7', 'requests==2.0.1',
                       'virtualenv==1.11.6'],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     author_email='bogna.ka@gmail.com',
     packages=['tests'],
     include_package_data=True
